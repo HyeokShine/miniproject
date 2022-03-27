@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/join.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+    <script src="/js/home.js" defer></script>
+    <script src="/js/join.js"></script>
+</head>
+  <body>
+      <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="/"> 
+              <i class="fas fa-camera-retro">&nbsp놀이터</i>
+            </a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="notice">공지사항</a></li>
+            <li><a href="board">게시판</a></li>
+        </ul>
+
+          <a href="login" class="navbar_login">로그인</a>
+
+        <a href="#" class="navbar_toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+      </nav>
+
+      <div class="main_text1">
+        <br><br><br>
+        <h1>레트로 놀이 속으로!<br>놀이터와 함께해요
+        </h1>
+        <div class="contents1">추억의 놀이를 공유해보세요.</div><br><br>
+        <div class="main">
+          <div class="camera">
+            <img src="/image/camera.jpg">
+          </div>
+          <div class="join_wrap">
+            <div class="join_box">
+              <form id="form" action="join" method="post">
+                <h2>회원가입</h2>
+                <input type="text" id="email" name="email" placeholder="이메일로 가입">
+                <input type="password" id="password" name="password" placeholder="비밀번호">
+                <input type="password" id="passwordck" name="passwordck" placeholder="비밀번호 확인">
+                <input type="text" id="name" name="name" placeholder="이름">
+                <input type="text" id="idnum" name="idnum" placeholder="생년월일 ()">
+                <button type="submit" id="join" value="join">회원가입</button><br>
+                <div id="id_error">올바른 이메일 형식이 아닙니다.</div>
+                <div id="pw_error">비밀번호를 입력해주세요.</div>
+                <div id="pwck_error">비밀번호 확인이 다릅니다.</div>
+                <div id="name_error">이름을 입력해주세요</div>
+                <div id="idnum_error">올바른 주민등록번호 형식이 아닙니다.</div>
+                <div id="ok">Succeeded!!</div>
+
+              </form>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="main_text0">
+        <h1>알림판</h1>
+        <div class="contents1"></div>
+        <ul class="icons">
+          <li>
+            <br>
+            <div class="icon_img">
+              <img src="/image/dd.JPG">
+            </div><br>
+            <div class="contents1_bold">레트로</div>
+            <div class="contents2">
+                추억의 놀이를 공유해보세요.
+            </div>
+          </li>
+          <li>
+            <br>
+            <div class="icon_img">
+              <img src="/image/ss.JPG">
+            </div><br>
+            <div class="contents1_bold">달고나</div>
+            <div class="contents2">
+                달고나 뽑기 성공사진을 인증해 봐요.
+            </div>
+          </li>
+
+          <li>
+            <br>
+            <div class="icon_img">
+              <img src="/image/nn.JPG">
+            </div><br>
+            <div class="contents1_bold">오늘의 인기글</div>
+            <div class="contents2">
+                추억의 놀이
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main_text1">
+        <h1>오늘의 달고나</h1><br><br>
+        <div class="contents1">
+          <img src="/image/dal1.jpg"><br><br>
+          <i class="fas fa-heart"> 120+</i><br><br>조회수 200회
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="navbar_logo"><br>
+          <a href="/"> 
+            <i style="color: azure;" class="fas fa-camera-retro">&nbsp놀이터</i>
+          </a>
+        </div>
+        
+        <div>
+          CEO. 떙떙떙 <br>
+          Addr. 서울특별시 마포구 포은로 240-35 땡떙타워 7차 14F 고객상담실<br>
+          Fax/Tel. 02 - 353 -7912 
+          COPYRIGHT 2022. TAMO. ALL RIGHT RESERVED.
+        </div>
+        <ul class="sns">
+          <li><i class="fab fa-instagram-square"></i></li>
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-twitter-square"></i></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" class="cc">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="/css/starter-template.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/join.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+    <script src="/js/join.js"></script>
+</head>
+  <body>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" th:replace="fragments/common :: menu('home')">
+      </nav>
+      <div class="main_text1">
+        <h1>오픈백과</h1>
+        <br>
+        정보를 공유해봐요.
+        <div class="contents1"></div><br><br>
+        <div class="main">
+          <div class="camera">
+            <img src="/image/main.jpg">
+          </div>
+          <div class="join_wrap">
+            <div class="join_box">
+              <form id="form" class="form-signin" th:action="@{/account/register}" method="post">
+                <h2>회원가입</h2>
+                <input type="text" id="username" name="username" placeholder="사용할 아이디를 입력하세요" required autofocus>
+                <button id="idck">중복확인</button>
+                <input type="password" id="inputPassword" name="password" placeholder="사용할 비밀번호 입력하세요" required>
+                <input type="password" id="passwordck" name="passwordck" placeholder="비밀번호 확인" required>
+                <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+                <button type="submit" id="join" value="join">회원가입</button><br>
+                <div id="pwck_error">비밀번호 확인이 다릅니다.</div>
+               
+              </form>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="main_text0">
+        <h1>이용방법</h1>
+        <div class="contents1"></div>
+        <ul class="icons">
+          <li>
+            <br>
+            <div class="icon_img">
+              <img src="/image/dd.JPG">
+            </div><br>
+            <div class="contents1_bold">작성</div>
+            <div class="contents2">
+                자신이 알고있는 정보를 공유해요 
+            </div>
+          </li>
+          <li>
+            <br>
+            <div class="icon_img">
+              <img src="/image/ss.JPG">
+            </div><br>
+            <div class="contents1_bold">수정</div>
+            <div class="contents2">
+                공유된 정보를 수정할수있어요
+            </div>
+          </li>
+
+          <li>
+            <br>
+            <div class="icon_img">
+              <img src="/image/nn.JPG">
+            </div><br>
+            <div class="contents1_bold">공유</div>
+            <div class="contents2">
+                다 함께 만들어보는 오픈백과
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <div class="navbar_logo"><br>
+          <a href="/"> 
+            <i style="color: azure;" class="fas fa-camera-retro">&nbsp오픈백과</i>
+          </a>
+        </div>
+        
+        <div>
+          CEO. 떙떙떙 <br>
+          Addr. 서울특별시 마포구 포은로 240-35 땡떙타워 7차 14F 고객상담실<br>
+          Fax/Tel. 02 - 353 -7912 
+          COPYRIGHT 2022. SDH. ALL RIGHT RESERVED.
+        </div>
+        <ul class="sns">
+          <li><i class="fab fa-instagram-square"></i></li>
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-twitter-square"></i></li>
+        </ul>
+      </div>
+  </body>
+ 
+    <script>
+    $(function() {
+    	 $("#idck").click(function() {
+    		 if(username.value =="" || username.value=="user") {
+    			 alert("사용불가능");
+    		 } else {
+    			 alert("사용가능");
+    		 }
+    		/*  if(username.value.length !== 0) {
+    			 fetch("/account/register/exists?username=" + username.value)
+    			 .then((response) => {
+    				 if(response.ok) {
+    					 alert("사용가능");
+    				 } else {
+    					 alert("사용 불가능")
+    				 }
+    			 });
+    		 } */
+    		});
+    })
+
+    </script>
+  
+</html>

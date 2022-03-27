@@ -1,0 +1,138 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding: 0px;
+  color: #212121;
+  background-color: inherit;
+}
+
+body{
+  background: #eef0f3;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.contents2 {
+  font-size: 18px;
+}
+
+.contents3 {
+  font-size: 14px;
+  font-weight: 100;
+}
+.contents1_bold{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.main_text0{
+  width: 100%;
+  height: 469px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  background: #eef0f3;
+}
+.main_text0 > h1{
+  text-align: center;
+  padding-top: 50px;
+  border-top: solid 1px #fff;
+}
+.main_text0 > .contents1 {
+  text-align: center;
+}
+
+.icons{
+  display: flex;
+  /* flex-direction: column; */
+  width:1280px;
+  height: 302px;
+  margin:auto;
+  
+}
+.icons > li {
+  flex: 1;
+  background: white;
+  margin-top:49px;
+  height:302px;
+  width: 302px;
+  text-align: center;
+}
+.icons > li > .icon_img img{
+  margin-top:18px;
+  width: 70px;
+}
+
+.icons > li:not(:last-child){
+  margin-right: 20px;
+}
+
+.icons .contents2 {
+  width:280px;
+  margin:auto;
+  letter-spacing: -1px;
+}
+
+.main_text1{
+  width: 100%;
+  height:1000px;
+  padding-top: 78px;
+  text-align: center;
+  border-top: solid 1px #fff;
+  background: #eef0f3
+}
+
+.main_text1 .contents1 img {
+  width: 20%;
+}
+.main_text1 > h1{
+  text-align: center;
+  margin-top: 0px;
+}
+.main_text1 > .contents1 {
+  text-align: center;
+}
+.main {
+  width:1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 513px;
+}
+
+.service > .contents2 {
+  padding: 20px;
+}
+.service > .contents2 > h2{
+  margin-bottom: 27px;
+}
+
+.footer{
+  display: flex;
+  background: #2a3038;
+  padding:30px;
+  justify-content: space-between;
+  color: #eef0f3;
+  
+}
+.footer > div:nth-child(2) {
+  color: #fff;
+  opacity: 0.8;
+}
+.footer i {
+  color: #fff;
+  /* size: 90px; */
+}
+
+@media screen and (max-width: 1024px) {
+  .main{
+    width: 464px;
+  }
+}
